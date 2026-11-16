@@ -1,0 +1,932 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070711">
+  <meta name="description" content="PortfolioAI — Un portfolio premium dédié aux ingénieurs en intelligence artificielle, spécialistes du Machine Learning et développeurs de solutions intelligentes.">
+  <meta name="author" content="Votre nom">
+
+  <title>PortfolioAI — L'intelligence en action.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="intro-active">
+
+  <!-- INTRODUCTION CINÉMATOGRAPHIQUE -->
+
+  <!--div class="intro" id="intro" aria-label="Introduction en cours de chargement">
+
+    <canvas id="intro-canvas"></canvas>
+    <div class="intro-grid"></div>
+
+    <div class="intro-center">
+
+      <div class="intro-orbit orbit-a"></div>
+      <div class="intro-orbit orbit-b"></div>
+
+      <div class="intro-core">
+        <span>P</span>
+      </div>
+
+      <div class="intro-wordmark">
+        PORTFOLIO<span>AI</span>
+      </div>
+
+      <div class="intro-caption">
+        L'INTELLIGENCE / EN ACTION
+      </div>
+
+    </div>
+
+    <div class="intro-bottom">
+
+      <div class="intro-status">
+        <span class="pulse-dot"></span>
+        <span id="intro-progress-text">
+          INITIALISATION DU RÉSEAU NEURONAL
+        </span>
+      </div>
+
+      <div class="intro-progress">
+        <span id="intro-progress-bar"></span>
+      </div>
+
+      <div class="intro-percent" id="intro-percent">
+        00%
+      </div>
+
+    </div>
+
+    <button class="skip-intro" id="skip-intro" type="button">
+      PASSER L'INTRODUCTION <span>↗</span>
+    </button>
+
+  </div>-->
+
+
+
+<div class="intro" id="intro" aria-label="Introduction en cours de chargement">
+
+  <canvas id="intro-canvas"></canvas>
+  <div class="intro-grid"></div>
+
+  <div class="intro-center intro-new">
+
+    <div class="neural-ring neural-ring-one"></div>
+    <div class="neural-ring neural-ring-two"></div>
+    <div class="neural-ring neural-ring-three"></div>
+
+    <div class="intro-network">
+      <span class="network-node node-a"></span>
+      <span class="network-node node-b"></span>
+      <span class="network-node node-c"></span>
+      <span class="network-node node-d"></span>
+      <span class="network-node node-e"></span>
+    </div>
+
+    <div class="intro-core">
+      <span>AI</span>
+    </div>
+
+    <div class="intro-wordmark">
+      PORTFOLIO<span>AI</span>
+    </div>
+
+    <div class="intro-caption">
+      THINK / CREATE / INNOVATE
+    </div>
+
+  </div>
+
+  <div class="intro-bottom">
+    <div class="intro-status">
+      <span class="pulse-dot"></span>
+      <span id="intro-progress-text">INITIALISATION DU RÉSEAU NEURONAL</span>
+    </div>
+
+    <div class="intro-progress">
+      <span id="intro-progress-bar"></span>
+    </div>
+
+    <div class="intro-percent" id="intro-percent">00%</div>
+  </div>
+
+  <!--button class="skip-intro" id="skip-intro" type="button">
+    PASSER L'INTRODUCTION <span>↗</span>
+  </button-->
+
+</div>
+
+
+  <main id="main-site" class="main-site">
+
+    <canvas id="universe-canvas" aria-hidden="true"></canvas>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+      <a class="brand" href="#home" aria-label="Accueil PortfolioAI">
+        PORTFOLIO<span>AI.</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#home" class="active">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#expertise">Expertises</a>
+        <a href="#technology">Technologies</a>
+        <a href="#projects">Projets</a>
+        <a href="#journey">Parcours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button
+          class="icon-button"
+          id="theme-toggle"
+          type="button"
+          aria-label="Passer au thème clair"
+          title="Changer de thème"
+        >☼</button>
+
+        <button
+          class="icon-button menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >☰</button>
+
+      </div>
+
+    </header>
+
+    <!-- MENU MOBILE -->
+
+    <div class="mobile-menu" id="mobile-menu">
+
+      <button
+        class="mobile-close"
+        id="close-menu"
+        type="button"
+        aria-label="Fermer le menu"
+      >×</button>
+
+      <nav aria-label="Navigation mobile">
+        <a href="#home">Accueil <span>01</span></a>
+        <a href="#about">À propos <span>02</span></a>
+        <a href="#expertise">Expertises <span>03</span></a>
+        <a href="#technology">Technologies <span>04</span></a>
+        <a href="#projects">Projets <span>05</span></a>
+        <a href="#journey">Parcours <span>06</span></a>
+        <a href="#contact">Contact <span>07</span></a>
+      </nav>
+
+      <p>L'INTELLIGENCE / EN ACTION</p>
+
+    </div>
+
+    <!-- SECTION HERO -->
+
+    <section class="hero section-shell" id="home">
+
+      <!-- VIDEO BACKGROUND -->
+
+      <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="../assets/vidro.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-copy">
+
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          PORTFOLIO TECHNOLOGIQUE
+          <span class="eyebrow-line"></span>
+          <span class="mono">DEPUIS 2026</span>
+        </div>
+
+        <p class="hero-kicker">
+          BONJOUR, JE SUIS <span id="hero-name">ALEX MORGAN</span>.
+        </p>
+
+        <h1>
+          CONCEVOIR<br>
+          <span class="gradient-text">L'INATTENDU.</span>
+        </h1>
+
+        <p class="hero-description">
+          Je transforme des idées ambitieuses et des problématiques complexes
+          en solutions numériques innovantes, en associant expertise technique,
+          créativité et approche centrée sur l'utilisateur.
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="button button-primary" href="#projects">
+            Découvrir mes projets <span>↗</span>
+          </a>
+
+          <a class="button button-ghost" href="#contact">
+            Entrer en contact <span>↗</span>
+          </a>
+
+        </div>
+
+        <div class="hero-meta">
+          <span><i></i> OUVERT AUX COLLABORATIONS</span>
+          <span class="meta-divider"></span>
+          <span>LOCALISATION : VOTRE VILLE</span>
+        </div>
+
+        <div class="hero-specialties">
+          <span>INTELLIGENCE ARTIFICIELLE</span>
+          <span>INNOVATION NUMÉRIQUE</span>
+          <span>DÉVELOPPEMENT LOGICIEL</span>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll">
+        <span>DÉFILER POUR EXPLORER</span>
+        <i></i>
+      </div>
+
+      <div class="hero-index mono">01 — 07</div>
+
+    </section>
+
+    <!-- CHIFFRES CLÉS -->
+
+    <section class="metrics section-shell reveal" aria-label="Aperçu du portfolio">
+
+      <div class="metric">
+        <strong data-count="06">06</strong>
+        <span>PROJETS DE DÉMONSTRATION</span>
+      </div>
+
+      <div class="metric">
+        <strong data-count="04">04</strong>
+        <span>DOMAINES D'EXPERTISE</span>
+      </div>
+
+      <div class="metric">
+        <strong data-count="12">12</strong>
+        <span>TECHNOLOGIES</span>
+      </div>
+
+      <div class="metric">
+        <strong>∞</strong>
+        <span>IDÉES À EXPLORER</span>
+      </div>
+
+    </section>
+
+    <!-- À PROPOS -->
+
+    <section class="section-shell section-block" id="about">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-index">01 / MA PHILOSOPHIE</p>
+
+          <h2>
+            LA CURIOSITÉ EN MOTEUR.<br>
+            <span class="gradient-text">L'INNOVATION EN OBJECTIF.</span>
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          La technologie prend toute sa valeur lorsqu'elle permet de concrétiser
+          des idées utiles et porteuses de sens. Cette conviction guide chacune
+          de mes expériences, conceptions et réalisations.
+        </p>
+
+      </div>
+
+      <div class="about-layout">
+
+        <div class="about-art reveal">
+
+          <div class="about-frame">
+
+            <div class="about-orb">
+              <span>P</span>
+            </div>
+
+            <div class="about-coordinate mono">
+              35°46' N<br>
+              05°49' W
+            </div>
+
+            <div class="about-frame-caption">
+              RÉFLÉCHIR / CONCEVOIR / AMÉLIORER
+            </div>
+
+          </div>
+
+          <div class="about-stamp">
+            PORTFOLIO<br>
+            <b>LABORATOIRE AI</b>
+            <span>VOL. 01 — 2026</span>
+          </div>
+
+        </div>
+
+        <div class="about-content reveal">
+
+          <p class="lead">
+            Un esprit créatif à la rencontre de
+            <span>la technologie</span>, de l'ingénierie et de l'innovation.
+          </p>
+
+          <p>
+            J'aime transformer des problématiques complexes en solutions
+            techniques structurées et accessibles. Mon approche associe
+            expérimentation, rigueur dans le développement et attention
+            portée aux besoins des utilisateurs.
+          </p>
+
+          <p>
+            De la conception de modèles prédictifs à l'intégration de
+            technologies intelligentes dans des applications, je considère
+            qu'une excellente solution technologique doit être avant tout
+            utile, compréhensible et responsable.
+          </p>
+
+          <div class="about-facts">
+
+            <div>
+              <span>01</span>
+              <b>Esprit d'analyse</b>
+              <small>Apprendre, expérimenter et remettre en question.</small>
+            </div>
+
+            <div>
+              <span>02</span>
+              <b>Vision produit</b>
+              <small>Transformer des idées en expériences concrètes.</small>
+            </div>
+
+            <div>
+              <span>03</span>
+              <b>Approche humaine</b>
+              <small>Créer avec clarté, attention et responsabilité.</small>
+            </div>
+
+          </div>
+
+          <a class="text-link" href="#contact">
+            ÉCHANGEONS ENSEMBLE <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EXPERTISES 
+
+    <section class="section-shell section-block" id="expertise">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-index">02 / MES DOMAINES</p>
+
+          <h2>
+            DOMAINES<br>
+            <span class="gradient-text">D'EXPERTISE.</span>
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          Un ensemble de compétences complémentaires pour concevoir,
+          développer et intégrer des solutions technologiques innovantes.
+        </p>
+
+      </div>
+
+      <div class="expertise-grid" id="expertise-grid"></div>
+
+    </section>-->
+
+    
+<!-- EXPERTISES -->
+
+<section class="section-shell section-block" id="expertise">
+
+  <div class="section-heading reveal">
+
+    <div>
+      <p class="section-index">02 / MES DOMAINES</p>
+
+      <h2>
+        DOMAINES<br>
+        <span class="gradient-text">D'EXPERTISE.</span>
+      </h2>
+    </div>
+
+    <p class="section-intro">
+      Un ensemble de compétences complémentaires pour concevoir,
+      développer et intégrer des solutions technologiques innovantes.
+    </p>
+
+  </div>
+
+  <div class="expertise-grid" id="expertise-grid"></div>
+
+  <!-- AI ROBOT -->
+
+  <div class="domains-robot">
+
+    <div class="robot-aura"></div>
+
+    <div class="robot">
+
+      <div class="robot-antenna"></div>
+
+      <div class="robot-head">
+
+        <div class="robot-ear left"></div>
+        <div class="robot-ear right"></div>
+
+        <div class="robot-face">
+          <span class="robot-eye"></span>
+          <span class="robot-eye"></span>
+        </div>
+
+      </div>
+
+      <div class="robot-neck"></div>
+
+      <div class="robot-body">
+
+        <div class="robot-light"></div>
+        <div class="robot-chest">AI</div>
+
+      </div>
+
+      <div class="robot-arm left"></div>
+      <div class="robot-arm right"></div>
+
+      <div class="robot-leg left"></div>
+      <div class="robot-leg right"></div>
+
+    </div>
+
+    <p class="robot-caption">ARTIFICIAL INTELLIGENCE</p>
+
+    <span class="robot-subcaption">
+      THINK / CREATE / INNOVATE
+    </span>
+
+  </div>
+
+</section>
+
+
+    <!-- TECHNOLOGIES -->
+
+    <section class="section-shell section-block" id="technology">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-index">03 / MON ENVIRONNEMENT TECHNIQUE</p>
+
+          <h2>
+            LA TECHNOLOGIE<br>
+            <span class="gradient-text">EN ACTION.</span>
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          Les outils prennent toute leur valeur lorsqu'ils permettent
+          de résoudre des problèmes concrets. Voici les technologies
+          qui constituent la base de mes réalisations.
+        </p>
+
+      </div>
+
+      <div class="technology-layout">
+
+        <div class="technology-intro reveal">
+
+          <span class="tech-orbit">✳</span>
+
+          <p class="mono">ENVIRONNEMENT TECHNIQUE / 2026</p>
+
+          <h3>
+            De la donnée brute<br>
+            à l'impact concret.
+          </h3>
+
+          <p>
+            Un écosystème flexible couvrant le développement de modèles,
+            l'ingénierie logicielle, le traitement des données
+            et le déploiement d'applications.
+          </p>
+
+          <div class="tech-note">
+            <span class="pulse-dot"></span>
+            EN CONSTANTE ÉVOLUTION
+          </div>
+
+        </div>
+
+        <div class="technology-groups" id="technology-groups"></div>
+
+      </div>
+
+      <div class="skill-strip reveal" id="skill-strip"></div>
+
+    </section>
+
+    <!-- PROJETS -->
+
+    <section class="section-shell section-block" id="projects">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-index">04 / MES RÉALISATIONS</p>
+
+          <h2>
+            DES IDÉES<br>
+            <span class="gradient-text">AU CONCRET.</span>
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          Une sélection de projets conceptuels et de démonstrations
+          techniques. Chaque réalisation explore une manière différente
+          de transformer la technologie en valeur ajoutée.
+        </p>
+
+      </div>
+
+      <div class="project-toolbar reveal">
+
+        <div class="project-filters" id="project-filters">
+
+          <button class="filter-btn active" data-filter="all">
+            TOUS <span>06</span>
+          </button>
+
+          <button class="filter-btn" data-filter="ml">
+            APPRENTISSAGE AUTOMATIQUE
+          </button>
+
+          <button class="filter-btn" data-filter="vision">
+            VISION PAR ORDINATEUR
+          </button>
+
+          <button class="filter-btn" data-filter="genai">
+            IA GÉNÉRATIVE
+          </button>
+
+          <button class="filter-btn" data-filter="data">
+            SCIENCE DES DONNÉES
+          </button>
+
+        </div>
+
+        <span class="mono project-count" id="project-count">
+          06 PROJETS
+        </span>
+
+      </div>
+
+      <div class="projects-grid" id="projects-grid"></div>
+
+    </section>
+
+    <!-- PARCOURS -->
+
+    <section class="section-shell section-block" id="journey">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-index">05 / MON PARCOURS</p>
+
+          <h2>
+            APPRENDRE SANS CESSE.<br>
+            <span class="gradient-text">PROGRESSER TOUJOURS.</span>
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          Une présentation du parcours professionnel et académique,
+          des expériences pratiques et des différentes étapes
+          de développement des compétences.
+        </p>
+
+      </div>
+
+      <div class="journey-grid">
+
+        <div class="journey-column reveal">
+
+          <div class="column-heading">
+            <span>01</span>
+            <h3>EXPÉRIENCE PROFESSIONNELLE</h3>
+          </div>
+
+          <div class="timeline" id="experience-list"></div>
+
+        </div>
+
+        <div class="journey-column reveal">
+
+          <div class="column-heading">
+            <span>02</span>
+            <h3>FORMATION</h3>
+          </div>
+
+          <div class="timeline" id="education-list"></div>
+
+        </div>
+
+      </div>
+
+      <div class="certifications reveal">
+
+        <div class="column-heading">
+          <span>03</span>
+          <h3>FORMATIONS ET CERTIFICATIONS</h3>
+        </div>
+
+        <div class="certification-list" id="certification-list"></div>
+
+      </div>
+
+    </section>
+
+    <!-- RECHERCHE ET SERVICES -->
+
+    <section class="section-shell section-block" id="research">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <p class="section-index">06 / AU-DELÀ DU CODE</p>
+
+          <h2>
+            DES QUESTIONS QUI<br>
+            <span class="gradient-text">FONT AVANCER.</span>
+          </h2>
+        </div>
+
+        <p class="section-intro">
+          Les projets les plus intéressants commencent souvent par
+          une meilleure question. Ces thématiques reflètent des
+          centres d'intérêt et des pistes d'exploration.
+        </p>
+
+      </div>
+
+      <div class="research-grid" id="research-grid"></div>
+
+      <div class="services-heading reveal">
+
+        <p class="section-index">MES DOMAINES D'INTERVENTION</p>
+
+        <h3>
+          DE L'IDÉE À LA<br>
+          <span class="gradient-text">RÉALISATION.</span>
+        </h3>
+
+      </div>
+
+      <div class="services-grid" id="services-grid"></div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="section-shell section-block contact-section" id="contact">
+
+      <div class="contact-panel reveal">
+
+        <div class="contact-visual">
+
+          <div class="contact-signal signal-a"></div>
+          <div class="contact-signal signal-b"></div>
+          <div class="contact-signal signal-c"></div>
+
+          <div class="contact-center">
+            P<span>AI</span>
+          </div>
+
+          <p class="mono">CANAL OUVERT / 24.7</p>
+
+        </div>
+
+        <div class="contact-copy">
+
+          <p class="section-index">07 / DONNONS VIE À VOS IDÉES</p>
+
+          <h2>
+            UN PROJET<br>
+            <span class="gradient-text">À CONCRÉTISER ?</span>
+          </h2>
+
+          <p>
+            Vous avez une idée ambitieuse, une problématique à résoudre
+            ou un projet qui nécessite une approche technologique innovante ?
+            Échangeons sur les possibilités de collaboration.
+          </p>
+
+          <div class="contact-details">
+
+            <a id="contact-email" href="mailto:hello@example.com">
+              hello@example.com
+            </a>
+
+            <span id="contact-location">
+              Votre ville, votre pays
+            </span>
+
+          </div>
+
+          <div class="social-links">
+
+            <a id="linkedin-link" href="#" target="_blank" rel="noopener">
+              LINKEDIN ↗
+            </a>
+
+            <a id="github-link" href="#" target="_blank" rel="noopener">
+              GITHUB ↗
+            </a>
+
+            <a id="scholar-link" href="#" target="_blank" rel="noopener">
+              GOOGLE SCHOLAR ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+
+        <div class="form-heading">
+
+          <span class="section-index">ENVOYER UN MESSAGE</span>
+          <span class="mono">FORMULAIRE / 001</span>
+
+        </div>
+
+        <div class="form-row">
+
+          <label>
+            VOTRE NOM
+            <input
+              name="name"
+              type="text"
+              placeholder="Votre nom"
+              required
+            >
+          </label>
+
+          <label>
+            ADRESSE E-MAIL
+            <input
+              name="email"
+              type="email"
+              placeholder="vous@exemple.com"
+              required
+            >
+          </label>
+
+        </div>
+
+        <label>
+          OBJET
+          <input
+            name="subject"
+            type="text"
+            placeholder="Quel est le sujet de votre message ?"
+            required
+          >
+        </label>
+
+        <label>
+          MESSAGE
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Présentez-nous brièvement votre idée ou votre projet..."
+            required
+          ></textarea>
+        </label>
+
+        <button class="button button-primary" type="submit">
+          PRÉPARER L'E-MAIL <span>↗</span>
+        </button>
+
+        <p class="form-note" id="form-note">
+          Ce formulaire de démonstration ouvre votre application de messagerie
+          par défaut. Connectez un service backend pour recevoir directement
+          les messages.
+        </p>
+
+      </form>
+
+    </section>
+
+    <!-- PIED DE PAGE -->
+
+    <footer class="footer section-shell">
+
+      <div class="footer-top">
+
+        <a class="brand" href="#home">
+          PORTFOLIO<span>AI.</span>
+        </a>
+
+        <p>
+          CONCEVOIR L'INTELLIGENCE.<br>
+          IMAGINER LE FUTUR.
+        </p>
+
+        <a class="back-top" href="#home">
+          RETOUR EN HAUT ↑
+        </a>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="year"></span> PORTFOLIOAI. MODÈLE DE PORTFOLIO.
+        </span>
+
+        <span>
+          CONÇU POUR LES SPÉCIALISTES DE L'INTELLIGENCE ARTIFICIELLE.
+        </span>
+
+        <span class="mono">
+          FIN DE TRANSMISSION_
+        </span>
+
+      </div>
+
+    </footer>
+
+    <button
+      class="back-to-top"
+      id="back-to-top"
+      type="button"
+      aria-label="Retour en haut de page"
+    >↑</button>
+
+  </main>
+
+  <!-- FENÊTRE DÉTAILS DU PROJET -->
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <article
+      class="modal-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+
+      <button
+        class="modal-close"
+        id="modal-close"
+        type="button"
+        aria-label="Fermer les détails du projet"
+      >×</button>
+
+      <div id="modal-content"></div>
+
+    </article>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
