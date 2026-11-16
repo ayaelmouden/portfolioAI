@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070711">
-  <meta name="description" content="PortfolioAI — Un portfolio premium dédié aux ingénieurs en intelligence artificielle, spécialistes du Machine Learning et développeurs de solutions intelligentes.">
+  <meta name="description" content="PortfolioAI — Un portfolio dédié à l'intelligence artificielle, au Machine Learning et au développement de solutions intelligentes.">
   <meta name="author" content="Votre nom">
 
   <title>PortfolioAI — L'intelligence en action.</title>
@@ -14,27 +14,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="intro-active">
 
-  <!-- INTRODUCTION CINÉMATOGRAPHIQUE -->
+  <!-- INTRODUCTION -->
 
-  <!--div class="intro" id="intro" aria-label="Introduction en cours de chargement">
+  <div class="intro" id="intro" aria-label="Introduction en cours de chargement">
 
     <canvas id="intro-canvas"></canvas>
     <div class="intro-grid"></div>
 
-    <div class="intro-center">
+    <div class="intro-center intro-new">
 
-      <div class="intro-orbit orbit-a"></div>
-      <div class="intro-orbit orbit-b"></div>
+      <div class="neural-ring neural-ring-one"></div>
+      <div class="neural-ring neural-ring-two"></div>
+      <div class="neural-ring neural-ring-three"></div>
+
+      <div class="intro-network">
+        <span class="network-node node-a"></span>
+        <span class="network-node node-b"></span>
+        <span class="network-node node-c"></span>
+        <span class="network-node node-d"></span>
+        <span class="network-node node-e"></span>
+      </div>
 
       <div class="intro-core">
-        <span>P</span>
+        <span>AI</span>
       </div>
 
       <div class="intro-wordmark">
@@ -42,7 +54,7 @@
       </div>
 
       <div class="intro-caption">
-        L'INTELLIGENCE / EN ACTION
+        THINK / CREATE / INNOVATE
       </div>
 
     </div>
@@ -60,72 +72,20 @@
         <span id="intro-progress-bar"></span>
       </div>
 
-      <div class="intro-percent" id="intro-percent">
-        00%
-      </div>
+      <div class="intro-percent" id="intro-percent">00%</div>
 
     </div>
 
+    <!-- Bouton facultatif pour passer l'introduction -->
+    <!--
     <button class="skip-intro" id="skip-intro" type="button">
       PASSER L'INTRODUCTION <span>↗</span>
     </button>
-
-  </div>-->
-
-
-
-<div class="intro" id="intro" aria-label="Introduction en cours de chargement">
-
-  <canvas id="intro-canvas"></canvas>
-  <div class="intro-grid"></div>
-
-  <div class="intro-center intro-new">
-
-    <div class="neural-ring neural-ring-one"></div>
-    <div class="neural-ring neural-ring-two"></div>
-    <div class="neural-ring neural-ring-three"></div>
-
-    <div class="intro-network">
-      <span class="network-node node-a"></span>
-      <span class="network-node node-b"></span>
-      <span class="network-node node-c"></span>
-      <span class="network-node node-d"></span>
-      <span class="network-node node-e"></span>
-    </div>
-
-    <div class="intro-core">
-      <span>AI</span>
-    </div>
-
-    <div class="intro-wordmark">
-      PORTFOLIO<span>AI</span>
-    </div>
-
-    <div class="intro-caption">
-      THINK / CREATE / INNOVATE
-    </div>
+    -->
 
   </div>
 
-  <div class="intro-bottom">
-    <div class="intro-status">
-      <span class="pulse-dot"></span>
-      <span id="intro-progress-text">INITIALISATION DU RÉSEAU NEURONAL</span>
-    </div>
-
-    <div class="intro-progress">
-      <span id="intro-progress-bar"></span>
-    </div>
-
-    <div class="intro-percent" id="intro-percent">00%</div>
-  </div>
-
-  <!--button class="skip-intro" id="skip-intro" type="button">
-    PASSER L'INTRODUCTION <span>↗</span>
-  </button>
-
-</div>
-
+  <!-- SITE PRINCIPAL -->
 
   <main id="main-site" class="main-site">
 
@@ -199,14 +159,19 @@
 
     </div>
 
-    <!-- SECTION HERO -->
+    <!-- HERO -->
 
     <section class="hero section-shell" id="home">
 
-      <!-- VIDEO BACKGROUND -->
-
-      <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
-        <source src="../assets/vidro.mp4" type="video/mp4">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-hidden="true"
+      >
+        <source src="assets/vidro.mp4" type="video/mp4">
       </video>
 
       <div class="hero-copy">
@@ -219,7 +184,7 @@
         </div>
 
         <p class="hero-kicker">
-          BONJOUR, JE SUIS <span id="hero-name">ALEX MORGAN</span>.
+          BONJOUR, JE SUIS <span id="hero-name">VOTRE NOM</span>.
         </p>
 
         <h1>
@@ -399,7 +364,7 @@
 
     </section>
 
-    <!-- EXPERTISES 
+    <!-- EXPERTISES -->
 
     <section class="section-shell section-block" id="expertise">
 
@@ -423,82 +388,52 @@
 
       <div class="expertise-grid" id="expertise-grid"></div>
 
-    </section>-->
+      <!-- ROBOT IA -->
 
-    
-<!-- EXPERTISES -->
+      <div class="domains-robot">
 
-<section class="section-shell section-block" id="expertise">
+        <div class="robot-aura"></div>
 
-  <div class="section-heading reveal">
+        <div class="robot">
 
-    <div>
-      <p class="section-index">02 / MES DOMAINES</p>
+          <div class="robot-antenna"></div>
 
-      <h2>
-        DOMAINES<br>
-        <span class="gradient-text">D'EXPERTISE.</span>
-      </h2>
-    </div>
+          <div class="robot-head">
 
-    <p class="section-intro">
-      Un ensemble de compétences complémentaires pour concevoir,
-      développer et intégrer des solutions technologiques innovantes.
-    </p>
+            <div class="robot-ear left"></div>
+            <div class="robot-ear right"></div>
 
-  </div>
+            <div class="robot-face">
+              <span class="robot-eye"></span>
+              <span class="robot-eye"></span>
+            </div>
 
-  <div class="expertise-grid" id="expertise-grid"></div>
+          </div>
 
-  <!-- AI ROBOT -->
+          <div class="robot-neck"></div>
 
-  <div class="domains-robot">
+          <div class="robot-body">
+            <div class="robot-light"></div>
+            <div class="robot-chest">AI</div>
+          </div>
 
-    <div class="robot-aura"></div>
+          <div class="robot-arm left"></div>
+          <div class="robot-arm right"></div>
 
-    <div class="robot">
+          <div class="robot-leg left"></div>
+          <div class="robot-leg right"></div>
 
-      <div class="robot-antenna"></div>
-
-      <div class="robot-head">
-
-        <div class="robot-ear left"></div>
-        <div class="robot-ear right"></div>
-
-        <div class="robot-face">
-          <span class="robot-eye"></span>
-          <span class="robot-eye"></span>
         </div>
 
-      </div>
+        <p class="robot-caption">ARTIFICIAL INTELLIGENCE</p>
 
-      <div class="robot-neck"></div>
-
-      <div class="robot-body">
-
-        <div class="robot-light"></div>
-        <div class="robot-chest">AI</div>
+        <span class="robot-subcaption">
+          THINK / CREATE / INNOVATE
+        </span>
 
       </div>
 
-      <div class="robot-arm left"></div>
-      <div class="robot-arm right"></div>
-
-      <div class="robot-leg left"></div>
-      <div class="robot-leg right"></div>
-
-    </div>
-
-    <p class="robot-caption">ARTIFICIAL INTELLIGENCE</p>
-
-    <span class="robot-subcaption">
-      THINK / CREATE / INNOVATE
-    </span>
-
-  </div>
-
-</section>
-
+    </section>
 
     <!-- TECHNOLOGIES -->
 
@@ -767,15 +702,15 @@
 
           <div class="social-links">
 
-            <a id="linkedin-link" href="#" target="_blank" rel="noopener">
+            <a id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer">
               LINKEDIN ↗
             </a>
 
-            <a id="github-link" href="#" target="_blank" rel="noopener">
+            <a id="github-link" href="#" target="_blank" rel="noopener noreferrer">
               GITHUB ↗
             </a>
 
-            <a id="scholar-link" href="#" target="_blank" rel="noopener">
+            <a id="scholar-link" href="#" target="_blank" rel="noopener noreferrer">
               GOOGLE SCHOLAR ↗
             </a>
 
@@ -788,10 +723,8 @@
       <form class="contact-form reveal" id="contact-form">
 
         <div class="form-heading">
-
           <span class="section-index">ENVOYER UN MESSAGE</span>
           <span class="mono">FORMULAIRE / 001</span>
-
         </div>
 
         <div class="form-row">
@@ -843,16 +776,16 @@
         </button>
 
         <p class="form-note" id="form-note">
-          Ce formulaire de démonstration ouvre votre application de messagerie
-          par défaut. Connectez un service backend pour recevoir directement
-          les messages.
+          Ce formulaire ouvre votre application de messagerie par défaut.
+          Un service backend est nécessaire pour recevoir directement
+          les messages sur un serveur.
         </p>
 
       </form>
 
     </section>
 
-    <!-- PIED DE PAGE -->
+    <!-- FOOTER -->
 
     <footer class="footer section-shell">
 
@@ -900,7 +833,7 @@
 
   </main>
 
-  <!-- FENÊTRE DÉTAILS DU PROJET -->
+  <!-- MODALE DES PROJETS -->
 
   <div class="project-modal" id="project-modal" aria-hidden="true">
 
@@ -926,7 +859,7 @@
 
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>
